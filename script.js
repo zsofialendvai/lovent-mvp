@@ -1,3 +1,22 @@
+// --- 1. Admin login ---
+const loginBtn = document.getElementById("login-btn");
+const passwordInput = document.getElementById("admin-password");
+const loginError = document.getElementById("login-error");
+const photoUploadSection = document.getElementById("photo-upload");
+
+const adminPassword = "lovent123"; // ide írd a jelszót, amit szeretnél
+
+loginBtn.addEventListener("click", () => {
+  if(passwordInput.value === adminPassword){
+    loginError.textContent = "";
+    photoUploadSection.style.display = "block"; // mutatjuk az upload részt
+    document.getElementById("login-section").style.display = "none"; // eltüntetjük a login-t
+  } else {
+    loginError.textContent = "Hibás jelszó!";
+  }
+});
+
+// --- 2. Cloudinary képfeltöltő ---
 const fileInput = document.getElementById("file-input");
 const photoGallery = document.getElementById("photo-gallery");
 
