@@ -3,8 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Lovent MVP</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Hello Lovent!</h1>
+
+<h1>Lovent Event Page</h1>
+
+<section id="event-info">
+  <h2>Event Info</h2>
+  <p>Event Title: <span id="event-title">Anna & Bence's Wedding</span></p>
+  <p>Date: <span id="event-date">2025-08-30</span></p>
+  <p>Location: <span id="event-location">Budapest</span></p>
+</section>
+
+<section id="photo-upload">
+  <h2>Upload Photos</h2>
+  <input type="file" id="file-input" multiple>
+  <div id="photo-gallery"></div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
