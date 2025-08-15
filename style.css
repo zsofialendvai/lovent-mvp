@@ -1,39 +1,83 @@
+/* --- Alap reset --- */
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
   background-color: #f9f9f9;
-}
-
-h1, h2 {
   color: #333;
 }
 
+h1, h2 {
+  color: #444;
+}
+
+/* --- Login section --- */
+#login-section {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#login-section input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#login-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#login-section button:hover {
+  background-color: #0056b3;
+}
+
+/* --- Event info --- */
 #event-info {
-  background-color: #fff;
+  max-width: 600px;
+  margin: 20px auto;
   padding: 15px;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+  border: 1px solid #ddd;
 }
 
+/* --- Photo upload section --- */
 #photo-upload {
-  background-color: #fff;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 15px;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
 }
 
+#photo-upload input[type="file"] {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* --- Photo gallery --- */
 #photo-gallery {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
+  gap: 10px;
 }
 
 #photo-gallery img {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  margin: 5px;
-  border-radius: 5px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
